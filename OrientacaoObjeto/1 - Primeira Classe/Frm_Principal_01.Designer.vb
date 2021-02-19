@@ -24,6 +24,10 @@ Partial Class Frm_Principal_01
     Private Sub InitializeComponent()
         Me.Lbl_Principal = New System.Windows.Forms.Label()
         Me.Btn_Acao = New System.Windows.Forms.Button()
+        Me.Lbl_Saldo = New System.Windows.Forms.Label()
+        Me.Lbl_Incremento = New System.Windows.Forms.Label()
+        Me.Txt_Saldo = New System.Windows.Forms.TextBox()
+        Me.Txt_Incremento = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Lbl_Principal
@@ -37,18 +41,54 @@ Partial Class Frm_Principal_01
         '
         'Btn_Acao
         '
-        Me.Btn_Acao.Location = New System.Drawing.Point(220, 159)
+        Me.Btn_Acao.Location = New System.Drawing.Point(40, 113)
         Me.Btn_Acao.Name = "Btn_Acao"
         Me.Btn_Acao.Size = New System.Drawing.Size(109, 40)
         Me.Btn_Acao.TabIndex = 1
         Me.Btn_Acao.Text = "Button1"
         Me.Btn_Acao.UseVisualStyleBackColor = True
         '
+        'Lbl_Saldo
+        '
+        Me.Lbl_Saldo.AutoSize = True
+        Me.Lbl_Saldo.Location = New System.Drawing.Point(12, 208)
+        Me.Lbl_Saldo.Name = "Lbl_Saldo"
+        Me.Lbl_Saldo.Size = New System.Drawing.Size(39, 13)
+        Me.Lbl_Saldo.TabIndex = 2
+        Me.Lbl_Saldo.Text = "Label1"
+        '
+        'Lbl_Incremento
+        '
+        Me.Lbl_Incremento.AutoSize = True
+        Me.Lbl_Incremento.Location = New System.Drawing.Point(141, 208)
+        Me.Lbl_Incremento.Name = "Lbl_Incremento"
+        Me.Lbl_Incremento.Size = New System.Drawing.Size(39, 13)
+        Me.Lbl_Incremento.TabIndex = 3
+        Me.Lbl_Incremento.Text = "Label1"
+        '
+        'Txt_Saldo
+        '
+        Me.Txt_Saldo.Location = New System.Drawing.Point(15, 242)
+        Me.Txt_Saldo.Name = "Txt_Saldo"
+        Me.Txt_Saldo.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Saldo.TabIndex = 4
+        '
+        'Txt_Incremento
+        '
+        Me.Txt_Incremento.Location = New System.Drawing.Point(144, 242)
+        Me.Txt_Incremento.Name = "Txt_Incremento"
+        Me.Txt_Incremento.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Incremento.TabIndex = 5
+        '
         'Frm_Principal_01
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(586, 368)
+        Me.ClientSize = New System.Drawing.Size(428, 342)
+        Me.Controls.Add(Me.Txt_Incremento)
+        Me.Controls.Add(Me.Txt_Saldo)
+        Me.Controls.Add(Me.Lbl_Incremento)
+        Me.Controls.Add(Me.Lbl_Saldo)
         Me.Controls.Add(Me.Btn_Acao)
         Me.Controls.Add(Me.Lbl_Principal)
         Me.Name = "Frm_Principal_01"
@@ -61,4 +101,8 @@ Partial Class Frm_Principal_01
 
     Friend WithEvents Lbl_Principal As Label
     Friend WithEvents Btn_Acao As Button
+    Friend WithEvents Lbl_Saldo As Label
+    Friend WithEvents Lbl_Incremento As Label
+    Friend WithEvents Txt_Saldo As TextBox
+    Friend WithEvents Txt_Incremento As TextBox
 End Class

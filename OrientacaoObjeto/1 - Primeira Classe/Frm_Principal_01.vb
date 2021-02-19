@@ -23,6 +23,25 @@
 
         Dim ContaCorrente As New ContaCorrente
 
+        ContaCorrente.Titular = "Gabriela"
+        ContaCorrente.Conta = 400915912
+        ContaCorrente.Agencia = 4009
+        ContaCorrente.Saldo = Val(Txt_Saldo.Text)
+
+        Lbl_Saldo.Text = "Saldo"
+        Lbl_Incremento.Text = "Incremento"
+
+
+        MsgBox("O saldo da conta da " + ContaCorrente.Titular + "na C/C " + ContaCorrente.Agencia.ToString _
+               + " - " + ContaCorrente.Conta.ToString + " é " + ContaCorrente.Saldo.ToString)
+
+        Dim vIncremento As Double = Val(Txt_Incremento.Text)
+        ContaCorrente.Saldo += vIncremento
+
+        MsgBox("O saldo da conta da " + ContaCorrente.Titular + "na C/C " + ContaCorrente.Agencia.ToString _
+       + " - " + ContaCorrente.Conta.ToString + " é " + ContaCorrente.Saldo.ToString)
+
 
     End Sub
+
 End Class
