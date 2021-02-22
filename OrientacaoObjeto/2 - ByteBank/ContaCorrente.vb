@@ -6,8 +6,12 @@ Public Class ContaCorrente
     Public Titular As Cliente
     Public Agencia As Integer
     Public Conta As Integer
-    Public Saldo As Double = 100
+    Private Saldo As Double = 100
     Public Extrato As String = ""
+
+    Public Function ObterSaldo() As Double
+        Return Saldo
+    End Function
 
     Public Function Sacar(ValorSacar As Double) As Boolean
 
@@ -25,7 +29,7 @@ Public Class ContaCorrente
     Public Function Transferir(ValorTransferencia As Double, ByRef ContaDestino As ContaCorrente) As Boolean
 
         Dim Retorno As Boolean
-        If Saldo < ValorTransferencia Then
+        If ObterSaldo < ValorTransferencia Then
             Retorno = False
         Else
             Saldo -= ValorTransferencia
