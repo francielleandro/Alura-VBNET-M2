@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E94604A2-C589-48E3-8E03-B9255972E5A9}</ProjectGuid>
+    <ProjectGuid>{0F8E29D0-DF3C-4366-B783-29FBCC2E24D2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ByteBank.My.MyApplication</StartupObject>
-    <RootNamespace>ByteBank</RootNamespace>
-    <AssemblyName>ByteBank</AssemblyName>
+    <StartupObject>_2___ByteBank.My.MyApplication</StartupObject>
+    <RootNamespace>_2___ByteBank</RootNamespace>
+    <AssemblyName>2 - ByteBank</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ByteBank.xml</DocumentationFile>
+    <DocumentationFile>2 - ByteBank.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ByteBank.xml</DocumentationFile>
+    <DocumentationFile>2 - ByteBank.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -75,8 +74,11 @@
   <ItemGroup>
     <Compile Include="Cliente.vb" />
     <Compile Include="ContaCorrente.vb" />
-    <Compile Include="Frm_Principal_02.Designer.vb" />
     <Compile Include="Frm_Principal_02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Principal_02.Designer.vb">
+      <DependentUpon>Frm_Principal_02.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,7 +98,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Frm_Principal_02.resx" />
+    <EmbeddedResource Include="Frm_Principal_02.resx">
+      <DependentUpon>Frm_Principal_02.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

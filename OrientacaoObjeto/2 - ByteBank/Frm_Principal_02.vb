@@ -240,15 +240,4 @@ Public Class Frm_Principal_02
            " Conta Corrente: " + ContaDoBruno.Conta.ToString
 
     End Sub
-
-    Private Sub InitializeComponent()
-        Me.SuspendLayout()
-        '
-        'Frm_Principal_02
-        '
-        Me.ClientSize = New System.Drawing.Size(1416, 522)
-        Me.Name = "Frm_Principal_02"
-        Me.ResumeLayout(False)
-
-    End Sub
 End Class
