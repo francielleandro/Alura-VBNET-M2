@@ -12,6 +12,10 @@
 
         Btn_Acao.Text = "Clique aqui"
 
+        Btn_Acao2.Text = "Conta Bruno"
+
+        Btn_ValRef.Text = "Clique aqui"
+
     End Sub
 
     Private Sub Btn_Acao_Click(sender As Object, e As EventArgs) Handles Btn_Acao.Click
@@ -44,4 +48,38 @@
 
     End Sub
 
+    Private Sub Btn_Acao2_Click(sender As Object, e As EventArgs) Handles Btn_Acao2.Click
+        Dim ContaBruno As New ContaCorrente
+
+        MsgBox(ContaBruno.Saldo)
+    End Sub
+
+    Private Sub Btn_ValRef_Click(sender As Object, e As EventArgs) Handles Btn_ValRef.Click
+        Dim idade As Integer = 20
+        Dim idade2 As Integer
+
+        idade2 = idade
+
+        MsgBox("Valor da idade" + idade.ToString + " idade2 " + idade2.ToString)
+
+        idade = 30
+
+        MsgBox("Valor da idade" + idade.ToString + " idade2 " + idade2.ToString)
+
+        Dim ContaGrabriela As New ContaCorrente
+        Dim ContaGrabielCostas As New ContaCorrente
+
+        ContaGrabriela.Titular = "Gabriela"
+        ContaGrabriela.Agencia = 863
+        ContaGrabriela.Conta = 86154
+
+        ContaGrabriela.Saldo = 150
+
+        ContaGrabielCostas = ContaGrabriela
+
+        MsgBox("Valor da ContaDaGabriela" + ContaGrabriela.Saldo.ToString +
+               "ContaGabrielaCosta " + ContaGrabielCostas.Saldo.ToString)
+
+
+    End Sub
 End Class

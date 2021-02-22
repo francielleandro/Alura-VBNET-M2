@@ -28,6 +28,8 @@ Partial Class Frm_Principal_01
         Me.Lbl_Incremento = New System.Windows.Forms.Label()
         Me.Txt_Saldo = New System.Windows.Forms.TextBox()
         Me.Txt_Incremento = New System.Windows.Forms.TextBox()
+        Me.Btn_Acao2 = New System.Windows.Forms.Button()
+        Me.Btn_ValRef = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Lbl_Principal
@@ -80,11 +82,31 @@ Partial Class Frm_Principal_01
         Me.Txt_Incremento.Size = New System.Drawing.Size(100, 20)
         Me.Txt_Incremento.TabIndex = 5
         '
+        'Btn_Acao2
+        '
+        Me.Btn_Acao2.Location = New System.Drawing.Point(252, 113)
+        Me.Btn_Acao2.Name = "Btn_Acao2"
+        Me.Btn_Acao2.Size = New System.Drawing.Size(109, 39)
+        Me.Btn_Acao2.TabIndex = 6
+        Me.Btn_Acao2.Text = "Button1"
+        Me.Btn_Acao2.UseVisualStyleBackColor = True
+        '
+        'Btn_ValRef
+        '
+        Me.Btn_ValRef.Location = New System.Drawing.Point(252, 158)
+        Me.Btn_ValRef.Name = "Btn_ValRef"
+        Me.Btn_ValRef.Size = New System.Drawing.Size(109, 39)
+        Me.Btn_ValRef.TabIndex = 7
+        Me.Btn_ValRef.Text = "Button1"
+        Me.Btn_ValRef.UseVisualStyleBackColor = True
+        '
         'Frm_Principal_01
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(428, 342)
+        Me.Controls.Add(Me.Btn_ValRef)
+        Me.Controls.Add(Me.Btn_Acao2)
         Me.Controls.Add(Me.Txt_Incremento)
         Me.Controls.Add(Me.Txt_Saldo)
         Me.Controls.Add(Me.Lbl_Incremento)
@@ -105,4 +127,6 @@ Partial Class Frm_Principal_01
     Friend WithEvents Lbl_Incremento As Label
     Friend WithEvents Txt_Saldo As TextBox
     Friend WithEvents Txt_Incremento As TextBox
+    Friend WithEvents Btn_Acao2 As Button
+    Friend WithEvents Btn_ValRef As Button
 End Class
