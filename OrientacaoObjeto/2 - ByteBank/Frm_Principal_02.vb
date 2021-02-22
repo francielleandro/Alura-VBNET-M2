@@ -2,10 +2,10 @@
 
 Public Class Frm_Principal_02
 
-    Dim ContaDaGabriela As New ContaCorrente
-    Dim ContaDoBruno As New ContaCorrente
+    Dim ContaDaGabriela As New ContaCorrente(100)
+    Dim ContaDoBruno As New ContaCorrente(50)
     'Dim Gabriela As New Cliente()
-    Dim Bruno As New Cliente()
+    Dim Bruno As New Cliente("Bruno", "12635656")
 
     Public Sub New()
 
@@ -65,12 +65,10 @@ Public Class Frm_Principal_02
 
         'ContaDaGabriela.Titular = New Cliente()
 
-        ContaDaGabriela.Titular = New Cliente()
-        ContaDaGabriela.Titular.Nome = "Gabriela"
-        ContaDaGabriela.Titular.CPF = "5656565656"
+        ContaDaGabriela.Titular = New Cliente("Gabriela", "5656565656")
         ContaDaGabriela.Titular.Profissao = "Analista de Sistemas"
         ContaDaGabriela.Titular.Cidade = "Rio de Janeiro"
-        ContaDaGabriela.Saldo = 10
+        'ContaDaGabriela.Saldo = 10
 
         ContaDaGabriela.Agencia = 863
         ContaDaGabriela.Conta = 863141
@@ -81,8 +79,8 @@ Public Class Frm_Principal_02
 
         ' Inicializar os dados da classe do Bruno
 
-        Bruno.Nome = "Bruno"
-        Bruno.CPF = "987654321"
+        'Bruno.Nome = "Bruno"
+        'Bruno.CPF = "987654321"
         Bruno.Profissao = "Advogado"
         Bruno.Cidade = "São Paulo"
 
