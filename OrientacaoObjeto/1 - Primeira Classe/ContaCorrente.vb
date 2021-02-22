@@ -4,6 +4,7 @@
     Public Agencia As Integer
     Public Conta As Integer
     Public Saldo As Integer
+    Public Extrto As String
 
 
     Public Function Sacar(ValorSacar As Double)
