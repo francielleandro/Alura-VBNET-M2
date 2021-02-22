@@ -18,7 +18,6 @@ Public Class Frm_Principal_02
 
         Me.Text = "2 - ByteBank"
         Lbl_Principal_02.Text = "2 - ByteBank"
-
         ' Inicialização dos textos para Gabriela
 
         Lbl_Valor_Gabriela.Text = "Valor a ser depositado/sacado"
@@ -92,6 +91,7 @@ Public Class Frm_Principal_02
             " Conta Corrente: " + ContaDoBruno.Conta.ToString + " CPF:" + ContaDoBruno.Titular.CPF
         Txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
 
+        Lbl_numeroClientes.Text = "O número atual de clientes é " + Cliente.NumeroClientes.ToString
     End Sub
 
     Private Sub Btm_Depositar_Gabriela_Click(sender As Object, e As EventArgs) Handles Btm_Depositar_Gabriela.Click
