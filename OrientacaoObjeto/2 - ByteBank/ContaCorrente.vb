@@ -2,11 +2,47 @@
 Imports _2___ByteBank.ByteBank
 
 Public Class ContaCorrente
+#Region "Propriedades"
 
-    Public Titular As Cliente
-    Public Agencia As Integer
-    Public Conta As Integer
-    Public Extrato As String = ""
+    Private m_titular As Cliente
+    Public Property Titular As Cliente
+        Get
+            Return m_titular
+        End Get
+        Set(value As Cliente)
+            m_titular = value
+        End Set
+    End Property
+
+    Private m_agencia As Integer
+    Public Property Agencia
+        Get
+            Return m_agencia
+        End Get
+        Set(value)
+            m_agencia = value
+        End Set
+    End Property
+
+    Private m_conta As Integer
+    Public Property Conta
+        Get
+            Return m_conta
+        End Get
+        Set(value)
+            m_conta = value
+        End Set
+    End Property
+
+    Public m_extrato As String = ""
+    Public Property Extrato
+        Get
+            Return m_extrato
+        End Get
+        Set(value)
+            m_extrato = value
+        End Set
+    End Property
 
     Private m_saldo As Double = 100
     Public Property Saldo As Double
@@ -23,6 +59,8 @@ Public Class ContaCorrente
         End Set
 
     End Property
+#End Region
+#Region "Metodos"
 
     'Public Sub SetSaldo(SaldoInicial As Double)
     '    If SaldoInicial < 0 Then
@@ -69,6 +107,7 @@ Public Class ContaCorrente
 
     End Sub
 
+#End Region
 
 End Class
 
