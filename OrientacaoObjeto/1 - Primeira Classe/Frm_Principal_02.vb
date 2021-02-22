@@ -14,6 +14,7 @@
         Lbl_ValorSacar.Text = "Valor a ser sacado"
         Btn_Sacar.Text = "Efetuar saque"
         Btn_Depositar.Text = "Depositar"
+        Btn_Trasferir_Gabriela.Text = "Efetuar Transferencia"
 
         Lbl_Saldo.Text = "Novo Saldo"
         Lbl_Resultado.Text = "Resultado do saque"
@@ -36,6 +37,7 @@
         Lbl_ValorSacarBruno.Text = "Valor a ser sacado"
         Btn_SacarBruno.Text = "Efetuar saque"
         Btn_DepositarBruno.Text = "Depositar"
+        Btn_Transferir_Bruno.Text = "Efetuar Transferencia"
 
         Lbl_SaldoBruno.Text = "Novo Saldo"
         Lbl_ResultadoBruno.Text = "Resultado do saque"
@@ -109,7 +111,7 @@
 
     Private Sub Btn_SacarBruno_Click(sender As Object, e As EventArgs) Handles Btn_SacarBruno.Click
 
-        Dim valorDepositar As Double = Val(Txt_ValorSacar.Text)
+        Dim valorDepositar As Double = Val(Txt_ValorSacarBruno.Text)
         contaDoBruno.Depositar(valorDepositar)
         Txt_SaldoBruno.Text = contaDoBruno.Saldo
         Txt_saldoAtualBruno.Text = contaDoBruno.Saldo
@@ -117,5 +119,30 @@
         contaDoBruno.Extrto += Now.ToString + " Deposíto de " + valorDepositar.ToString + " saldo " + contaDoBruno.Saldo.ToString + vbCrLf
 
         Txt_ExtratoBruno.Text = contaDoBruno.Extrto
+    End Sub
+
+    Private Sub Btn_Trasferir_Gabriela_Click(sender As Object, e As EventArgs) Handles Btn_Trasferir_Gabriela.Click
+        Dim valorDepositar As Double = Val(Txt_ValorSacar.Text)
+
+        If contaDaGabriela.Transferir(valorDepositar, contaDoBruno) Then
+            contaDaGabriela.Extrto += Now.ToString + " Transferencia de " + valorDepositar.ToString + " saldo " + contaDaGabriela.Saldo.ToString + vbCrLf
+            Txt_extrado.Text = contaDaGabriela.Extrto
+            Txt_Resultado.Text = "Transferencia efetuada com sucesso!"
+        Else
+            Txt_Resultado.Text = "Não foi possivel efetuar a transação"
+        End If
+
+    End Sub
+
+    Private Sub Btn_Transferir_Bruno_Click(sender As Object, e As EventArgs) Handles Btn_Transferir_Bruno.Click
+        Dim valorDepositar As Double = Val(Txt_ValorSacarBruno.Text)
+
+        If contaDoBruno.Transferir(valorDepositar, contaDaGabriela) Then
+            contaDoBruno.Extrto += Now.ToString + " Transferencia de " + valorDepositar.ToString + " saldo " + contaDoBruno.Saldo.ToString + vbCrLf
+            Txt_ExtratoBruno.Text = contaDoBruno.Extrto
+            Txt_ResultadoBruno.Text = "Transferencia efetuada com sucesso!"
+        Else
+            Txt_ResultadoBruno.Text = "Não foi possivel efetuar a transação"
+        End If
     End Sub
 End Class

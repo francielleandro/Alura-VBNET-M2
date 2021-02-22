@@ -35,7 +35,9 @@ Partial Class Frm_Principal_02
         Me.Btn_Depositar = New System.Windows.Forms.Button()
         Me.Txt_extrado = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Btn_Trasferir_Gabriela = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Btn_Transferir_Bruno = New System.Windows.Forms.Button()
         Me.Txt_ValorSacarBruno = New System.Windows.Forms.TextBox()
         Me.Txt_ExtratoBruno = New System.Windows.Forms.TextBox()
         Me.Lbl_ValorSacarBruno = New System.Windows.Forms.Label()
@@ -88,7 +90,7 @@ Partial Class Frm_Principal_02
         'Lbl_Saldo
         '
         Me.Lbl_Saldo.AutoSize = True
-        Me.Lbl_Saldo.Location = New System.Drawing.Point(9, 180)
+        Me.Lbl_Saldo.Location = New System.Drawing.Point(9, 219)
         Me.Lbl_Saldo.Name = "Lbl_Saldo"
         Me.Lbl_Saldo.Size = New System.Drawing.Size(39, 13)
         Me.Lbl_Saldo.TabIndex = 4
@@ -96,7 +98,7 @@ Partial Class Frm_Principal_02
         '
         'Txt_Saldo
         '
-        Me.Txt_Saldo.Location = New System.Drawing.Point(12, 196)
+        Me.Txt_Saldo.Location = New System.Drawing.Point(12, 235)
         Me.Txt_Saldo.Name = "Txt_Saldo"
         Me.Txt_Saldo.Size = New System.Drawing.Size(156, 20)
         Me.Txt_Saldo.TabIndex = 5
@@ -104,7 +106,7 @@ Partial Class Frm_Principal_02
         'Lbl_Resultado
         '
         Me.Lbl_Resultado.AutoSize = True
-        Me.Lbl_Resultado.Location = New System.Drawing.Point(9, 219)
+        Me.Lbl_Resultado.Location = New System.Drawing.Point(9, 258)
         Me.Lbl_Resultado.Name = "Lbl_Resultado"
         Me.Lbl_Resultado.Size = New System.Drawing.Size(39, 13)
         Me.Lbl_Resultado.TabIndex = 6
@@ -112,7 +114,7 @@ Partial Class Frm_Principal_02
         '
         'Txt_Resultado
         '
-        Me.Txt_Resultado.Location = New System.Drawing.Point(12, 235)
+        Me.Txt_Resultado.Location = New System.Drawing.Point(12, 274)
         Me.Txt_Resultado.Name = "Txt_Resultado"
         Me.Txt_Resultado.Size = New System.Drawing.Size(156, 20)
         Me.Txt_Resultado.TabIndex = 7
@@ -144,7 +146,7 @@ Partial Class Frm_Principal_02
         '
         'Txt_extrado
         '
-        Me.Txt_extrado.Location = New System.Drawing.Point(191, 52)
+        Me.Txt_extrado.Location = New System.Drawing.Point(191, 36)
         Me.Txt_extrado.Multiline = True
         Me.Txt_extrado.Name = "Txt_extrado"
         Me.Txt_extrado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -153,6 +155,7 @@ Partial Class Frm_Principal_02
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Btn_Trasferir_Gabriela)
         Me.GroupBox1.Controls.Add(Me.Txt_ValorSacar)
         Me.GroupBox1.Controls.Add(Me.Txt_extrado)
         Me.GroupBox1.Controls.Add(Me.Lbl_ValorSacar)
@@ -166,13 +169,23 @@ Partial Class Frm_Principal_02
         Me.GroupBox1.Controls.Add(Me.Lbl_Resultado)
         Me.GroupBox1.Location = New System.Drawing.Point(16, 49)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(402, 261)
+        Me.GroupBox1.Size = New System.Drawing.Size(402, 325)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'Btn_Trasferir_Gabriela
+        '
+        Me.Btn_Trasferir_Gabriela.Location = New System.Drawing.Point(12, 183)
+        Me.Btn_Trasferir_Gabriela.Name = "Btn_Trasferir_Gabriela"
+        Me.Btn_Trasferir_Gabriela.Size = New System.Drawing.Size(156, 23)
+        Me.Btn_Trasferir_Gabriela.TabIndex = 12
+        Me.Btn_Trasferir_Gabriela.Text = "Button1"
+        Me.Btn_Trasferir_Gabriela.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Btn_Transferir_Bruno)
         Me.GroupBox2.Controls.Add(Me.Txt_ValorSacarBruno)
         Me.GroupBox2.Controls.Add(Me.Txt_ExtratoBruno)
         Me.GroupBox2.Controls.Add(Me.Lbl_ValorSacarBruno)
@@ -186,10 +199,19 @@ Partial Class Frm_Principal_02
         Me.GroupBox2.Controls.Add(Me.Lbl_ResultadoBruno)
         Me.GroupBox2.Location = New System.Drawing.Point(477, 49)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(402, 261)
+        Me.GroupBox2.Size = New System.Drawing.Size(402, 325)
         Me.GroupBox2.TabIndex = 13
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
+        '
+        'Btn_Transferir_Bruno
+        '
+        Me.Btn_Transferir_Bruno.Location = New System.Drawing.Point(12, 183)
+        Me.Btn_Transferir_Bruno.Name = "Btn_Transferir_Bruno"
+        Me.Btn_Transferir_Bruno.Size = New System.Drawing.Size(156, 23)
+        Me.Btn_Transferir_Bruno.TabIndex = 12
+        Me.Btn_Transferir_Bruno.Text = "Button1"
+        Me.Btn_Transferir_Bruno.UseVisualStyleBackColor = True
         '
         'Txt_ValorSacarBruno
         '
@@ -200,7 +222,7 @@ Partial Class Frm_Principal_02
         '
         'Txt_ExtratoBruno
         '
-        Me.Txt_ExtratoBruno.Location = New System.Drawing.Point(191, 52)
+        Me.Txt_ExtratoBruno.Location = New System.Drawing.Point(191, 36)
         Me.Txt_ExtratoBruno.Multiline = True
         Me.Txt_ExtratoBruno.Name = "Txt_ExtratoBruno"
         Me.Txt_ExtratoBruno.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -244,7 +266,7 @@ Partial Class Frm_Principal_02
         'Lbl_SaldoBruno
         '
         Me.Lbl_SaldoBruno.AutoSize = True
-        Me.Lbl_SaldoBruno.Location = New System.Drawing.Point(9, 180)
+        Me.Lbl_SaldoBruno.Location = New System.Drawing.Point(9, 219)
         Me.Lbl_SaldoBruno.Name = "Lbl_SaldoBruno"
         Me.Lbl_SaldoBruno.Size = New System.Drawing.Size(39, 13)
         Me.Lbl_SaldoBruno.TabIndex = 4
@@ -261,14 +283,14 @@ Partial Class Frm_Principal_02
         '
         'Txt_SaldoBruno
         '
-        Me.Txt_SaldoBruno.Location = New System.Drawing.Point(12, 196)
+        Me.Txt_SaldoBruno.Location = New System.Drawing.Point(12, 235)
         Me.Txt_SaldoBruno.Name = "Txt_SaldoBruno"
         Me.Txt_SaldoBruno.Size = New System.Drawing.Size(156, 20)
         Me.Txt_SaldoBruno.TabIndex = 5
         '
         'Txt_ResultadoBruno
         '
-        Me.Txt_ResultadoBruno.Location = New System.Drawing.Point(12, 235)
+        Me.Txt_ResultadoBruno.Location = New System.Drawing.Point(12, 274)
         Me.Txt_ResultadoBruno.Name = "Txt_ResultadoBruno"
         Me.Txt_ResultadoBruno.Size = New System.Drawing.Size(156, 20)
         Me.Txt_ResultadoBruno.TabIndex = 7
@@ -276,7 +298,7 @@ Partial Class Frm_Principal_02
         'Lbl_ResultadoBruno
         '
         Me.Lbl_ResultadoBruno.AutoSize = True
-        Me.Lbl_ResultadoBruno.Location = New System.Drawing.Point(9, 219)
+        Me.Lbl_ResultadoBruno.Location = New System.Drawing.Point(9, 258)
         Me.Lbl_ResultadoBruno.Name = "Lbl_ResultadoBruno"
         Me.Lbl_ResultadoBruno.Size = New System.Drawing.Size(39, 13)
         Me.Lbl_ResultadoBruno.TabIndex = 6
@@ -326,4 +348,6 @@ Partial Class Frm_Principal_02
     Friend WithEvents Txt_SaldoBruno As TextBox
     Friend WithEvents Txt_ResultadoBruno As TextBox
     Friend WithEvents Lbl_ResultadoBruno As Label
+    Friend WithEvents Btn_Trasferir_Gabriela As Button
+    Friend WithEvents Btn_Transferir_Bruno As Button
 End Class
