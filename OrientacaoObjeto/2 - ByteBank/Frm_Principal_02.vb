@@ -67,7 +67,7 @@ Public Class Frm_Principal_02
 
         ContaDaGabriela.Titular = New Cliente()
         ContaDaGabriela.Titular.Nome = "Gabriela"
-        ContaDaGabriela.Titular.CPF = "123456789"
+        ContaDaGabriela.Titular.CPF = "5656565656"
         ContaDaGabriela.Titular.Profissao = "Analista de Sistemas"
         ContaDaGabriela.Titular.Cidade = "Rio de Janeiro"
         ContaDaGabriela.Saldo = 10
@@ -76,7 +76,7 @@ Public Class Frm_Principal_02
         ContaDaGabriela.Conta = 863141
 
         Lbl_BemVindo_Gabriela.Text = "Bem Vindo " + ContaDaGabriela.Titular.Nome + " Agência: " + ContaDaGabriela.Agencia.ToString +
-            " Conta Corrente: " + ContaDaGabriela.Conta.ToString
+            " Conta Corrente: " + ContaDaGabriela.Conta.ToString + " CPF:" + ContaDaGabriela.Titular.CPF
         Txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
 
         ' Inicializar os dados da classe do Bruno
@@ -91,7 +91,7 @@ Public Class Frm_Principal_02
         ContaDoBruno.Conta = 863224
 
         Lbl_BemVindo_Bruno.Text = "Bem Vindo " + ContaDoBruno.Titular.Nome + " Agência: " + ContaDoBruno.Agencia.ToString +
-            " Conta Corrente: " + ContaDoBruno.Conta.ToString
+            " Conta Corrente: " + ContaDoBruno.Conta.ToString + " CPF:" + ContaDoBruno.Titular.CPF
         Txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
 
     End Sub
